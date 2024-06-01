@@ -1,0 +1,33 @@
+.movie-cart {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .movie-info {
+    padding: 16px;
+    background-color: #fff;
+  }
+  
+  .movie-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+  }
+  
+  .movie-description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 8px;
+  }
+  

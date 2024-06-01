@@ -4,14 +4,24 @@ import './index.css';
 import App from './App';
 import { Components, Component1, Component2 } from './components';
 import reportWebVitals from './reportWebVitals';
+import Moviecart from './moviecart';
+import movieData from './movieData'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <Components/>
-    <Component1/>
-    <Component2/>
+    {/* <App /> */}
+      {movieData.map(singleMovieData => (
+        <Moviecart
+          key={singleMovieData.id}
+          movie={singleMovieData}
+        />
+      ))}
+  
+    {/* movieData.map((singlemovieData) =>{
+       <Moviecart(singlemovieData) />
+    }) */}
+    
   </React.StrictMode>
 );
 
