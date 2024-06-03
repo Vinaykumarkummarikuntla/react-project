@@ -1,27 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
-  var x = 'Hi vinay kumar how are you!'
-  var y = 10
-  var z = 20
 
-  function dummy(x, y) {
-    return x+y
-    }
+  var [x, updateX] = useState("text")
+  var [y, updateY] = useState("text yellow")
 
   return (
     <div className="App">
       { <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <br />
-          welcome {x}
+          Hi Vinay <code>src/App.js</code> and save to reload.
+        <br/> 
         </p>
+        <input type="text"  value = {x} onChange={(obj) => updateX(obj.target.value)} />
         <br />
-        sum of two numbers {dummy(y,z)}
-
+        <h1> big break </h1>
+        <h3> {x}, {y}</h3>
+        <input type="text"  value = {y} onChange={(obj) => updateY(obj.target.value)} />
         <a
           className="App-link"
           href="https://reactjs.org"

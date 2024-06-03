@@ -10,13 +10,13 @@ import movieData from './movieData';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-      {movieData.map(singleMovieData => (
+    <App />
+      {/* {movieData.map(singleMovieData => (
         <Moviecart
           key={singleMovieData.id}
           movie={singleMovieData}
         />
-      ))}
+      ))} */}
   
     {/* movieData.map((singlemovieData) =>{
        <Moviecart(singlemovieData) />
